@@ -1,0 +1,14 @@
+#place the service file in /etc/systemd/system/
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=3
+User=root
+Group=root
+WorkingDirectory=/root/logger
+ExecStart=/usr/local/bin/uvicorn logger:app --port 8000
+
+[Install]
+WantedBy=multi-user.target graphical-user.target
