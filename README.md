@@ -5,4 +5,11 @@ Log to a file via a REST endpoint
 
 Start:
 
-`$ uvicorn /usr/local/bin/uvicorn logger:app --port 8000 --host 0.0.0.0`
+`$ uvicorn logger:app --port 8000 --host 0.0.0.0`
+
+
+Create a system service:
+
+Place the logger.service file in /etc/systemd/system directory
+
+`$ systemctl start logger.service`
