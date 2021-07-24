@@ -26,7 +26,7 @@ curl --header "Content-Type: application/json" \
 
 
 Create a system service:<br>
-Place the logger.service file in `/etc/systemd/system/` directory
+Place the logger.service file in `/etc/systemd/system/` directory. Modify the working directory and user.
 ```
 systemctl start logger.service
 ```
