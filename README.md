@@ -3,7 +3,7 @@ Log to a file via a REST endpoint
 
 Install:
 ```
-pip install uvicorn fastapi
+pip3 install uvicorn fastapi
 ```
 
 Start:
