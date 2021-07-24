@@ -19,7 +19,7 @@ curl http:localhost:8000
 Send logs:
 ``` 
 curl --header "Content-Type: application/json" \ 
-     --request POST \<br>
+     --request POST \
      --data '{"text":"hello worl log"}' \ 
      http://localhost:8000 
  ```
